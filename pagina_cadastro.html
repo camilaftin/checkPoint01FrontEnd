@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');</style>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <title>Cidade São Vicente - Cadastro</title>
+    <!--<script src='main.js'></script>-->
+  <style type="text/css">
+
+    body {
+      background: url("https://cdnstatic8.com/viagensecaminhos.com/wp-content/uploads/2012/03/sao-vicente.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #FDFFB6;
+      width: 100%;
+    }
+
+    .transparencia{
+      background: rgb(34,193,195);
+      background: -moz-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.469625350140056) 100%);
+      background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.469625350140056) 100%);  
+      background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.469625350140056) 100%);
+      width: 100%;
+      height: 100%;
+      
+    }
+
+    .titulo{
+      font-family: Praise, Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    /* -------- SEÇÃO DO BOTAO ------- */
+
+    section {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;  
+      background: var(--bg);
+      z-index: -10;
+    }
+
+    .enviar, .limpar{
+      border:1px solid #25692A;
+      border-radius:4px;
+      width: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family:Verdana;
+      font-weight:bold;
+      font-size:13px;
+      padding:10px 10px;
+      text-decoration:none;
+      text-align: center;  
+    }
+
+    .enviar{
+      border-color:#68b465;
+      
+    }
+
+    .limpar{
+      border-color:#365834;
+      background:linear-gradient(to bottom, #99ce98 5%, #5bbb58  100%);
+      box-shadow:inset 0px 1px 0px 0px #e3f1e3;
+      color:rgb(58, 8, 8);
+      text-shadow:0px 1px 0px #7db623;
+    }
+
+  </style>
+
+</head>
+        
+<body>
+  <div class="titulo">
+    <h1>Seja bem-vindo a São Vicente - SP</h1>
+  </div>
+
+  <div class="transparencia">
+  <form method="POST" action="">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+        <div>
+          <h1>Nome</h1>
+          <div>
+            <label form="nome">Nome</label>
+            <input 
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite seu nome"
+              maxlength="100"
+            >
+          </div>
+        </div>
+      <div>
+        <h1>E-mail</h1>
+          <div>
+            <label form="nome">E-mail</label>
+            <input 
+              type="email"
+              name="emailDoUsuario"
+              id="email"
+              placeholder="Digite seu e-mail"
+            >
+          </div>
+      </div>
+
+      <div>
+        <h1>Telefone</h1>
+        <div>
+          <label form="nome">Telefone</label>
+          <input 
+            type="number"
+            name="emailDoUsuario"
+            id="telefone"
+            placeholder="Digite seu numero"
+          >
+        </div>
+      </div>
+
+      <div>
+        <h1>Data de Nascimento</h1>
+        <div>
+          <label form="nome">Data de Nascimento</label>
+          <input 
+            type="date"
+            name="nascimentoUsuario"
+            id="nascimento"
+            placeholder="Digite sua data de nascimento"
+          >
+        </div>
+      </div>
+
+    <div>
+      <h1>Você é maior de idade?</h1>
+        <div>
+          <input 
+          type="radio" 
+          name="idade" 
+          value="sim"
+          id="idade"
+          required
+          >
+          <label for="idade">Sim</label>
+        </div>
+
+        <div>
+          <input 
+            type="radio" 
+            name="idade" 
+            value="nao"
+            id="idade"
+            required
+          >
+          <label for="idade">Não</label>
+      </div>
+    </div>
+
+    </fieldset>
+    
+    <fieldset>
+      <legend>Sobre a Cidade</legend>
+        <div>
+          <h1>Qual o ponto mais interessante da Cidade?</h1>
+          <div>
+            <label for="pontosInteresse">Pontos de interesse</label>
+              <select 
+                name="pontosInteresse" 
+                id="pontosInteresse"
+              >
+
+              <option value="ponto1">Av. Paulista</option>
+              <option value="ponto2">Parque Ibirapuera</option>
+              <option value="ponto2">Museu do Ipiranga</option>
+              <option value="ponto2">Autódromo de Interlagos</option>
+              <option value="ponto2">Estação da Luz</option>
+                      
+              </select>
+          </div>
+        </div>
+
+        <div>
+          <h1>Qual o interessa da sua visita na Cidade?</h1>
+          <div>
+            <input 
+              type="checkbox"
+              name="InteressaVisita"
+              id="Turista"
+              value="Turista"
+            >
+            <label for="Turista">Turista</label>
+          </div>
+          <div>
+            <input 
+              type="checkbox"
+              name="InteressaVisita"
+              id="Residente"
+              value="Residente"
+            >
+            <label for="Residente">Residente</label>
+          </div>
+          <div>
+            <input 
+              type="checkbox"
+              name="InteressaVisita"
+              id="Estudante"
+              value="Estudante"
+            >
+            <label for="Estudante">Estudante</label>
+          </div>
+        </div>
+    </fieldset>
+    <section>
+      <div class="botao enviar">
+        <button type="submit">Enviar formulário</button>
+      </div>  
+      <div class="botao limpar">
+        <button type="reset">Limpar formulário</button>
+      </div> 
+    </section> 
+
+  </form>
+</div>
+</body>
+</html>
